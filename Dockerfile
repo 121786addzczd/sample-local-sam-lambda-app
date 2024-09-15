@@ -26,8 +26,8 @@ RUN curl -Lo aws-sam-cli-linux-x86_64.zip https://github.com/aws/aws-sam-cli/rel
     && rm -rf aws-sam-cli-linux-x86_64.zip sam-installation
 
 # AWS CLIの設定
-RUN aws configure set aws_access_key_id "dummy-access-key" \
-    && aws configure set aws_secret_access_key "dummy-secret-key" \
+RUN aws configure set aws_access_key_id "dummyAccessKey" \
+    && aws configure set aws_secret_access_key "dummySecretKey" \
     && aws configure set default.region "ap-northeast-1" \
     && aws configure set default.output "json"
 
